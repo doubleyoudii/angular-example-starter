@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 // import { CommonModule } from '@angular/common';
-import { Routes, RouterModule, Router } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
 
 import { AboutComponent } from './modules/general/about/about.component';
 import { ContactComponent } from './modules/general/contact/contact.component';
@@ -38,6 +38,13 @@ const routes: Routes = [
   },
   { path: '**', component: NotFoundComponent },
 ];
+// const routes: Routes = [
+//   { path: '', component: HomeComponent },
+//   { path: 'contact', component: ContactComponent },
+//   { path: 'about', component: AboutComponent },
+//   { path: 'signin', component: SigninComponent },
+//   { path: '**', component: NotFoundComponent },
+// ];
 
 @NgModule({
   declarations: [],
